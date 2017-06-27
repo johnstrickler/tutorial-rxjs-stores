@@ -1,6 +1,6 @@
 import { RxjsStoresPage } from './app.po';
 
-describe('rxjs-stores App', () => {
+describe('tutorial-rxjs-stores App', () => {
   let page: RxjsStoresPage;
 
   beforeEach(() => {
