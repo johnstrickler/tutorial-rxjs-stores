@@ -1,0 +1,24 @@
+
+<div class="team">
+
+  <div class="team-header">
+    <div class="row">
+      <div class="col-md">
+        <h6>{{ team.name }}</h6>
+      </div>
+      <div class="col-md" [class.over-budget]="remainingBudget() < 0">
+        <div class="budget">{{ remainingBudget() | currency : 'USD' : true : '1.0' }}</div>
+        <small>Budget</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="players">
+    <ul *ngIf="team.players?.length">
+      <li *ngFor="let player of team.players">
+        {{ player.name }} ({{ player.salary | currency : 'USD' : true : '1.0' }})
+      </li>
+    </ul>
+  </div>
+
+</div>

@@ -1,0 +1,59 @@
+
+$padding: 10px;
+$primary-color: #3b5998;
+$secondary-color: #fff;
+$warning-color: #ff322f;
+
+.team {
+  background-color: $secondary-color;
+  border: solid 1px $primary-color;
+  padding-bottom: $padding;
+}
+
+.team-header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  margin-bottom: 8px;
+  padding: 0 $padding;
+
+  .col-md:first-child {
+    padding-bottom: $padding;
+    padding-top: $padding;
+  }
+
+  .col-md:last-child {
+    text-align: right;
+
+    &.over-budget {
+      color: $warning-color;
+    }
+  }
+
+  h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+
+  .budget {
+    font-size: .875em;
+    line-height: .875em;
+    margin-bottom: -5px;
+    margin-top: 9px;
+  }
+
+  small {
+    font-size: .7em;
+    line-height: .7em;
+  }
+}
+
+.players {
+  padding: 0 $padding;
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
